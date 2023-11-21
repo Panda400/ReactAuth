@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    font-family: "Poppins", cursive;
+    margin: 0;
+}
+
+/* body{
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+} */
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #45216d, #45216d, #45216d);
+  /* backdrop-filter: blur(20px); */
+}
+
+.register{
+  max-width: 1300px;
+  height: 650px;
+  width: 350vw;
+  display:flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  /* box-shadow: 1px 3px 10px #e9ecef; */
+  background-color: #e9ecef;
+}
+
+.register span{
+  color: #1f2122;
+}
+
+#form{
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+}
+
+#form >  input, .btn{
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+  border-radius: 7px;
+}
+
+#form > input:focus{
+  outline: none;
+}
+
+#form > .btn{
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+
+.register .col-1{
+  margin: auto;
+  padding: 3em 0;
+}
+
+.register .col-1 .apple-div{
+  width: 100%;
+  background-color: #45216d;
+  border: 1px solid #45216d;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.register .col-1 img{
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin-left:-250px;
+  margin-top: 5px;
+
+}
+
+
+.register .col-2 img{
+  width: 900px;
+  height: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+}
+
+@media screen and (min-width: 860px)  {
+  .register .col-2 img{
+    display: initial;
+  }
+}

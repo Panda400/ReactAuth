@@ -5,9 +5,10 @@
     margin: 0;
 }
 
-/* body{
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
-} */
+body{
+  background: linear-gradient(to right, #45216d, #45216d, #45216d); 
+  width:auto;
+}
 
 .App {
   height: 100vh;
@@ -72,21 +73,41 @@
   padding: 3em 0;
 }
 
-.register .col-1 .apple-div{
+.register .col-1 .btn-div .apple-btn, .google-btn, .windows-btn{
   width: 100%;
+  height:45px;
   background-color: #45216d;
   border: 1px solid #45216d;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+
 }
 
-.register .col-1 img{
-  width: 30px;
-  height: 30px;
+.register .col-1 .btn-div .appleimg, .googleimg{
+  width: 45px;
+  height: 35px;
   border-radius: 20px;
-  margin-left:-250px;
-  margin-top: 5px;
+  margin-left:-200px;
+  margin-top: 3px;
+}
 
+.register .col-1 .btn-div  .windowsimg{
+  width: 45px;
+  height: 35px;
+  border-radius: 20px;
+  margin-left:-180px;
+  margin-top: 3px;
+}
+
+.register .col-1 .btn-div .apple-btn .AppleN, .google-btn .GoogleN, .windows-btn .WindowsN{
+  font-size: medium;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #e9ecef;
+  margin-top: 10px;
 }
 
 
@@ -100,7 +121,7 @@
   display: none;
 }
 
-@media screen and (min-width: 860px)  {
+@media screen and (min-width: 800px)  {
   .register .col-2 img{
     display: initial;
   }
